@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Treasure Ayo Luxury — Custom Asoebi, Bridal & Luxury Tailoring | Lagos</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Treasure Ayo Luxury — bespoke Asoebi, bridal gowns, kiddies' wear and luxury tailoring in Lagos, Nigeria. Where Your Body Speaks." />
+  <meta name="keywords" content="Treasure Ayo Luxury, fashion designer Nigeria, custom asoebi, bridal couture, luxury tailoring, kiddies wear, agbada, aso-oke, couture, native wear" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Open Graph (social share) -->
+  <meta property="og:title" content="Treasure Ayo Luxury — Custom Asoebi & Luxury Tailoring" />
+  <meta property="og:description" content="Bespoke Asoebi, bridal & couture from Treasure Ayo Luxury — Where Your Body Speaks." />
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data (local business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Treasure Ayo Luxury",
+    "image": "https://yourdomain.com/assets/logo.png",
+    "telephone": "+2348095309696",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 79, Ireshe Road, Close to Adaraloye St, Ikorodu",
+      "addressLocality": "Ikorodu",
+      "addressRegion": "Lagos",
+      "addressCountry": "NG"
+    },
+    "url": "https://yourdomain.com",
+    "description": "Luxury tailoring, custom Asoebi, bridal gowns and kiddies' fashion in Lagos, Nigeria."
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault(); // Stop form from refreshing page
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      document.getElementById('success-message').style.display = 'block';
+      document.getElementById('error-message').style.display = 'none';
+      form.reset();
+    } else {
+      document.getElementById('error-message').style.display = 'block';
+      document.getElementById('success-message').style.display = 'none';
+    }
+  } catch (error) {
+    document.getElementById('error-message').style.display = 'block';
+    document.getElementById('success-message').style.display = 'none';
+  }
+});
+</script>
+
+<body>
+
+    <!-- Luxury Hero Section -->
+    <section class="luxury-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Treasure Ayo Luxury</h1>
+            <p>Where Elegance Meets Bold Expression</p>
+            <a href="#services" class="cta-btn">Explore Our Collection</a>
+        </div>
+    </section>
+
+    <!-- Your existing website content below -->
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/">
+        <img src="IMG-20250201-WA0001.jpg" alt="Treasure Ayo Luxury logo" class="logo">
+        <div>
+          <h1 class="brand-title">Treasure Ayo Luxury</h1>
+          <p class="brand-tag">Where Your Body Speaks</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO: dark-pink + white cinematic background -->
+  <section class="hero" role="banner" aria-label="Hero">
+    <div class="hero-inner container">
+      <h2 class="hero-title">Elegant Fashion. Timeless Craft.</h2>
+      <p class="hero-sub">Bespoke Asoebi • Bridal Couture • Luxury Tailoring • Kiddies' Fashion</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#gallery">View Collection</a>
+        <a class="btn btn-ghost" href="#contact">Book a Fitting</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- SERVICES (keyword-rich copy for SEO) -->
+    <section id="services" class="section container">
+      <h2>Premium Fashion & Tailoring Services</h2>
+      <p class="lead">Treasure Ayo Luxury specialises in custom Asoebi, bridal gowns, couture, traditional wear (Agbada, Aso-Oke), luxury tailoring and kiddies' fashion — handcrafted with premium fabrics and couture finishes.</p>
+
+      <ul class="services-grid" aria-label="Services list">
+        <li><strong>Custom Asoebi</strong><span>Group styling, fabric sourcing & bespoke party sets.</span></li>
+        <li><strong>Bridal Couture</strong><span>Made-to-measure wedding gowns, fittings & alterations.</span></li>
+        <li><strong>Luxury Tailoring</strong><span>Perfect-fit suits & high-end finishing.</span></li>
+        <li><strong>Kiddies' Fashion</strong><span>Comfortable, durable and stylish children's wear.</span></li>
+        <li><strong>Traditional Wear</strong><span>Agbada, Aso-Oke & native ceremonial designs.</span></li>
+        <li><strong>Styling Consultation</strong><span>Photoshoot styling & wardrobe planning.</span></li>
+      </ul>
+    </section>
+
+    <!-- GALLERY -->
+<section class="services-gallery">
+    <h2>Our Fashion Services</h2>
+    <p>At Treasure Ayo Luxury, we create exquisite custom designs that bring your style to life — from traditional Asoebi to luxury bridal gowns.</p>
+
+    <div class="gallery">
+        <figure>
+            <img src="20250131_190807.jpg" srcset="20250131_190807.jpg 480w, 20250131_190807.jpg 800w"
+                sizes="(max-width:600px) 100vw, 33vw" alt="Asoebi party wear in pink" loading="lazy">
+            <figcaption>Custom Asoebi Party Wear</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.44 (1).jpeg" alt="Custom Asoebi Party Wear" loading="lazy">
+            <figcaption>Custom Asoebi Party Wear</figcaption>
+        </figure>
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.42.53 (2).jpeg" alt="Custom Asoebi Party Wear" loading="lazy">
+            <figcaption>Custom Asoebi Party Wear</figcaption>
+        </figure>
+
+        <figure>
+            <img src="20250207_185703.jpg" alt="Bridal couture sample" loading="lazy">
+            <figcaption>Luxury Bridal Couture</figcaption>
+        </figure>
+
+        <figure>
+            <img src="20250207_185724.jpg" alt="Bridal couture sample" loading="lazy">
+            <figcaption>Luxury Bridal Couture</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.39 (1).jpeg" alt="Agbada design" loading="lazy">
+            <figcaption>Elegant Agbada Designs</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.40 (3).jpeg" alt="Agbada design" loading="lazy">
+            <figcaption>Elegant Agbada Designs</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-07-27 at 22.57.42.jpeg" alt="Kiddies fashion" loading="lazy">
+            <figcaption>Exclusive Kiddies Fashion</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-07-27 at 22.57.41 (2).jpeg" alt="Kiddies fashion" loading="lazy">
+            <figcaption>Exclusive Kiddies Fashion</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-07-27 at 22.57.45 (1).jpeg" alt="Kiddies fashion" loading="lazy">
+            <figcaption>Exclusive Kiddies Fashion</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-07-27 at 22.57.41.jpeg" alt="Kiddies fashion" loading="lazy">
+            <figcaption>Exclusive Kiddies Fashion</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.40.jpeg" alt="Couture gown" loading="lazy">
+            <figcaption>Tailored Couture Gowns</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.20.25 (1).jpeg" alt="Couture gown" loading="lazy">
+            <figcaption>Tailored Couture Gowns</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.41 (2).jpeg" alt="Couture gown" loading="lazy">
+            <figcaption>Tailored Couture Gowns</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.42.jpeg" alt="Couture gown" loading="lazy">
+            <figcaption>Tailored Couture Gowns</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.44 (2).jpeg" alt="Aso-ebi design" loading="lazy">
+            <figcaption>Handcrafted Aso-ebi</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.41.jpeg" alt="Aso-ebi design" loading="lazy">
+            <figcaption>Handcrafted Aso-ebi</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.41 (1).jpeg" alt="Aso-ebi design" loading="lazy">
+            <figcaption>Handcrafted Aso-ebi</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.45 (3).jpeg" alt="Aso-ebi design" loading="lazy">
+            <figcaption>Handcrafted Aso-ebi</figcaption>
+        </figure>
+
+                <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.43.jpeg" alt="Aso-Oke design" loading="lazy">
+            <figcaption>Handcrafted Aso-Oke</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.42.54 (3).jpeg" alt="Aso-Oke design" loading="lazy">
+            <figcaption>Handcrafted Aso-Oke</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.36.jpeg" alt="Aso-Oke design" loading="lazy">
+            <figcaption>Handcrafted Aso-Oke</figcaption>
+        </figure>
+
+        <figure>
+            <img src="WhatsApp Image 2025-08-05 at 23.40.46.jpeg" alt="Aso-Oke design" loading="lazy">
+            <figcaption>Handcrafted Aso-Oke</figcaption>
+        </figure>
+    </div>
+</section>
+    <!-- TESTIMONIAL -->
+    <section class="section container">
+      <h2>What Clients Say</h2>
+      <blockquote class="testimonial">"My wedding dress was everything I dreamed — perfect fit and gorgeous finish." <cite>— Yetunde O.</cite></blockquote>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact container">
+      <div class="contact-left">
+        <h2>Contact & Visit</h2>
+        <p><strong>Address:</strong> No. 79, Ireshe Road, close to Adaraloye St, Ikorodu, Lagos</p>
+        <p><strong>Phone:</strong> +234 809 530 9696</p>
+        <p><strong>Email:</strong> <a href="mailto:treasureayo33@gmail.com">treasureayo33@gmail.com</a></p>
+
+        <div class="social">
+          <a href="https://www.instagram.com/treasureayoluxury33" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/treasureayoluxury" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@treasureayoluxury" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+
+<form id="contact-form" class="contact-form" 
+      action=https://formspree.io/f/meoznojo 
+      method="POST">
+      
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required>
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
+
+  <label for="service">Service of interest</label>
+  <select id="service" name="service">
+    <option>Custom Asoebi</option>
+    <option>Bridal Couture</option>
+    <option>Luxury Tailoring</option>
+    <option>Kiddies Wear</option>
+    <option>Styling Consultation</option>
+  </select>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<!-- Success Message -->
+<div id="success-message" style="display:none; color: green; margin-top: 10px;">
+  ✅ Your message has been sent successfully!
+</div>
+<div id="error-message" style="display:none; color: red; margin-top: 10px;">
+  ❌ Something went wrong. Please try again.
+</div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2025 Treasure Ayo Luxury — All rights reserved.</p>
+      <small>Designed for elegance • Lagos, Nigeria</small>
+    </div>
+  </footer>
+
+</body>
+</html>

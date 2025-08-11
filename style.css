@@ -1,0 +1,197 @@
+/* VARIABLES */
+:root{
+  --pink-dark: #7b1f48;
+  --pink-accent: #d24b7a;
+  --white: #ffffff;
+  --muted: #666666;
+  --container: 1100px;
+  --radius: 10px;
+  --gap: 1rem;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+img{display:block;max-width:100%;height:auto}
+.container{max-width:var(--container);margin:0 auto;padding:0 1rem}
+
+/* HEADER */
+.site-header{position:sticky;top:0;background:var(--white);z-index:50;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.header-row{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
+.logo{width:64px;height:64px;border-radius:10px;object-fit:cover}
+.brand-title{font-size:1rem;margin-bottom:.15rem}
+.brand-tag{font-size:.78rem;color:var(--muted)}
+.main-nav a{margin-left:1rem;color:var(--pink-dark);text-decoration:none;font-weight:600}
+.main-nav a:hover{color:var(--pink-accent);text-decoration:underline}
+
+/* HERO (dark-pink + white cinematic) */
+.hero{
+  min-height:64vh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  color:var(--white);
+  padding:3.5rem 1rem;
+  background-image:
+    linear-gradient(120deg, rgba(123,31,72,.6), rgba(255,255,255,.03)),
+    url('assets/studio-pink.jpg'); /* ← add your cinematic dark-pink studio image here */
+  background-size:cover;
+  background-position:center;
+}
+.hero-title{font-size:2rem;letter-spacing:.6px}
+.hero-sub{margin-top:.6rem;opacity:.95}
+.hero-ctas{margin-top:1.1rem;display:flex;gap:.75rem;justify-content:center}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:999px;font-weight:700;text-decoration:none;cursor:pointer}
+.btn-primary{background:var(--pink-accent);color:#111;border:none}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(210,75,122,.12)}
+.btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.45)}
+
+/* SECTION */
+.section{padding:3rem 1rem}
+.lead{color:var(--muted);margin-top:.5rem}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+.services-grid li{background:var(--white);padding:1rem;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.05);color:#222}
+.services-grid li span{display:block;color:var(--muted);margin-top:.45rem}
+
+.services-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.services-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.services-gallery p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery figure {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery figcaption {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* TESTIMONIAL */
+.testimonial{background:var(--white);padding:1rem;border-left:4px solid var(--pink-accent);border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.04);font-style:italic;color:#222}
+
+/* CONTACT */
+.contact {display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:start}
+.contact-left p{margin:.4rem 0}
+.social a{display:inline-block;margin-right:.6rem;color:var(--pink-dark);text-decoration:none}
+.contact-form{background:var(--white);padding:1rem;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.05)}
+.contact-form label{display:block;margin-top:.6rem;color:var(--muted)}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:.6rem;margin-top:.25rem;border:1px solid #eee;border-radius:6px}
+.contact-form button{margin-top:.8rem;padding:.7rem;background:var(--pink-accent);border:none;color:#111;border-radius:8px;font-weight:700;cursor:pointer}
+
+/* FOOTER */
+.site-footer{background:#111;color:#fff;padding:1.2rem;text-align:center}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .contact{grid-template-columns:1fr}
+  .main-nav{display:none}
+  .hero-title{font-size:1.5rem}
+}
+/* Reset margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Luxury Hero Section */
+.luxury-hero {
+    position: relative;
+    height: 100vh;
+    background: url('WhatsApp\ Image\ 2025-08-05\ at\ 23.40.46\ \(2\).jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Dark Overlay */
+.luxury-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Text Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', serif;
+    color: #FFD700; /* Royal gold */
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #32CD32; /* Emerald green accent */
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #32CD32;
+    color: white;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
